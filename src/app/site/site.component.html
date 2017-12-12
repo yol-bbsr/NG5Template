@@ -1,0 +1,10 @@
+<site-header [sidenav]="sidenav"></site-header>
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav class="sidenav" align="start" mode="over" opened="false" #sidenav
+    [fixedInViewport]="true" [fixedTopGap]="64" [fixedBottomGap]="0">
+    <site-sidenav></site-sidenav>
+  </mat-sidenav>
+  <div class="main-container" #scrollContainer>
+    <router-outlet (activate)="onActivate($event, scrollContainer)"></router-outlet>
+  </div>
+</mat-sidenav-container>

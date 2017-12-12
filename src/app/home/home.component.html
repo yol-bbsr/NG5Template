@@ -1,0 +1,10 @@
+﻿<div [fxFlex]>
+	<ul>
+		<li *ngFor="let user of users">
+			{{user.username}} - ({{user.firstName}} {{user.lastName}})
+			- <a (click)="deleteUser(user.id)">Delete</a>
+		</li>
+	</ul>
+	Home works!
+	<div style="height:1065px;"></div>
+</div>

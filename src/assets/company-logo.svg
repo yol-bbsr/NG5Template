@@ -1,0 +1,14 @@
+<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <defs>
+  <filter id="magnify_blur" x="-50%" y="-50%" width="200%" height="200%">
+   <feGaussianBlur stdDeviation="1.6"/>
+  </filter>
+ </defs>
+ <g>
+  <g stroke="null" filter="url(#magnify_blur)" id="svg_2" transform="rotate(90 81.28150177001955,55.781478881835945) "/>
+  <rect stroke="null" fill="#ff0000" stroke-width="5" x="11.45891" y="2.98195" width="5.1497" height="21" id="svg_4"/>
+  <rect stroke="null" fill="#ffaa56" stroke-width="5" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="3.914" y="8.51365" width="5.02994" height="15.46829" id="svg_5"/>
+  <rect stroke="null" fill="#007f00" stroke-width="5" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" x="18.88406" y="14.04536" width="5.02994" height="9.93659" id="svg_6"/>
+  <path transform="rotate(90 8.963569641113281,13.700980186462404) " fill="#ffffff" d="m6.31431,4.92467a7.65339,6.51955 0 0 1 7.65339,6.51955c0,1.61484 -0.69469,3.0993 -1.83681,4.24272l0.31791,0.27081l0.93018,0l5.88722,5.01504l-1.76616,1.50451l-5.88722,-5.01504l0,-0.79238l-0.31791,-0.27081c-1.34229,0.97292 -3.0849,1.56469 -4.98058,1.56469a7.65339,6.51955 0 0 1 -7.65339,-6.51955a7.65339,6.51955 0 0 1 7.65339,-6.51955m0,2.00602c-2.94361,0 -5.2985,2.00601 -5.2985,4.51353c0,2.50752 2.35489,4.51354 5.2985,4.51354c2.94361,0 5.2985,-2.00602 5.2985,-4.51354c0,-2.50752 -2.35489,-4.51353 -5.2985,-4.51353z" id="svg_3" stroke="null"/>
+ </g>
+</svg>

@@ -1,0 +1,18 @@
+<div class="sidenav-container" fxLayout="column">
+  <div class="sidenav-scrollbar-container" fxLayout="column">
+    <perfect-scrollbar>
+      <mat-nav-list fxLayout="column" class="sidenav-list sidenav-toplevel">
+        <sidenav-item *ngFor="let item of items" [item]="item"></sidenav-item>
+      </mat-nav-list>
+    </perfect-scrollbar>
+  </div>
+
+  <div class="sidenav-footer" fxLayout="row" fxFlexAligin="start center">
+    <mat-icon fxFlex="30" style="font-size: 20px;" svgIcon="company-logo"></mat-icon>
+    <span fxFlex></span>
+    <div>
+      <mat-icon style="font-size: 20px;" svgIcon="copyright"></mat-icon> 
+      <span class="copyright">2015 - 2017</span>
+    </div>
+  </div>
+</div>

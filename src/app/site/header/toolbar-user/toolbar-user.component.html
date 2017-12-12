@@ -1,0 +1,31 @@
+<div class="toolbar-user-container">
+  <button mat-button (click)="toggleDropdown()" class="toolbar-user-btn" [class.open]="isOpen">
+    <span fxLayout="row" fxLayoutAlign="start center">
+      <img class="avatar" [src]="currentUser.currentUser?.photoURL || 'assets/images/avatars/noavatar.png'">
+      <div fxLayout="column" fxLayoutAlign="space-evenly stretch">
+        <span class="name" fxHide fxShow.gt-sm>{{currentUser.currentUserName}} ({{currentUser.roleName}})</span>
+        <span class="name" fxHide fxShow.gt-sm>{{currentUser.projectName}}</span>
+      </div>
+      <mat-icon class="icon" fxHide fxShow.gt-sm svgIcon="menu-down"></mat-icon>
+    </span>
+  </button>
+  <div class="dropdown mat-elevation-z1" [class.open]="isOpen">
+    <div class="content">
+      <div class="list">
+        <div class="item" fxLayout="row" fxLayoutAlign="start center" (click)="changeProject()" mat-ripple>
+          <mat-icon class="icon" svgIcon="folder"></mat-icon>
+          <span class="title">Change Project</span>
+        </div>
+        <div class="item" fxLayout="row" fxLayoutAlign="start center" (click)="showSettings()" mat-ripple>
+          <mat-icon class="icon" svgIcon="settings"></mat-icon>
+          <span class="title">Settings</span>
+        </div>
+        <mat-divider></mat-divider>
+        <div class="item" fxLayout="row" fxLayoutAlign="start center" (click)="logout()" mat-ripple>
+          <mat-icon class="icon" svgIcon="exit-to-app"></mat-icon>
+          <span class="title">Exit</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

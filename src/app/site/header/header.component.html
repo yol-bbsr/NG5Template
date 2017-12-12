@@ -1,0 +1,23 @@
+<mat-toolbar color="primary" role="header" fxLayout="row" fxLayoutAlign="start center">
+  <div (click)="sidenav.opened = !sidenav.opened" class="logo-text">
+    <mat-icon [class.status]="sidenav.opened" class="mat-icon-button" svgIcon="dots-vertical"></mat-icon>
+    <span class="text">ANOVA</span>
+    <span class="beta-text">beta</span>
+  </div>
+  <span fxFlex></span>
+  <div class="spinner" *ngIf="showLoading">Loading
+    <div class="s1"></div>
+    <div class="s2"></div>
+    <div class="s3"></div>
+  </div>
+  <span fxFlex></span>
+  <button mat-icon-button (click)="goHome()">
+    <mat-icon svgIcon="home"></mat-icon>
+  </button>
+  <button mat-icon-button [fxHide]="true" [fxHide.gt-sm]="false" (click)="toggleFullscreen()">
+    <mat-icon *ngIf="!isFullscreen" svgIcon="fullscreen"></mat-icon>
+    <mat-icon *ngIf="isFullscreen" svgIcon="fullscreen-exit"></mat-icon>
+  </button>
+  <app-toolbar-user></app-toolbar-user>
+  <span fxHide fxShow.gt-sm>&nbsp;</span>
+</mat-toolbar>
